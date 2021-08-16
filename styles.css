@@ -89,6 +89,11 @@ header {
   width: 2em;
   margin-top: 0.5em;
   margin-right: 0.5em;
+  opacity: 0.5;
+}
+
+.icons:hover {
+  opacity: 1;
 }
 
 .cta {
@@ -134,8 +139,27 @@ header {
   color: #922eb6;
   font-size: 1em;
   font-weight: 500;
-  opacity: 0.64;
+  opacity: 0.5;
   margin-top: 0.5em;
+}
+
+.left-side-text > a {
+  display: block;
+  background-color: #922eb6;
+  padding: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 5em;
+  width: 6em;
+  margin-top: 0.5em;
+  opacity: 0.7;
+}
+
+.left-side-text > a:hover {
+  opacity: 1;
 }
 
 #project-1 > .left-side-text > .project-text > h2 {
@@ -151,6 +175,25 @@ header {
   font-weight: 500;
   opacity: 0.64;
   margin-top: 0.5em;
+}
+
+#project-1 > .left-side-text > .project-text > a {
+  display: block;
+  background-color: #922eb6;
+  padding: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 5em;
+  width: 6em;
+  margin-top: 0.5em;
+  opacity: 0.7;
+}
+
+#project-1 > .left-side-text > .project-text > a:hover {
+  opacity: 1;
 }
 
 .left-side-screenshot {
@@ -175,11 +218,29 @@ header {
 }
 
 .rigth-side-text > h3 {
-  color: #ffffff;
+  color: #fff;
   font-size: 1em;
   font-weight: 500;
   opacity: 0.64;
   margin-top: 0.5em;
+}
+
+.rigth-side-text > a {
+  display: block;
+  background-color: #fff;
+  padding: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 5em;
+  width: 6em;
+  margin-top: 0.5em;
+  opacity: 0.7;
+}
+
+.rigth-side-text > a:hover {
+  opacity: 1;
 }
 
 .rigth-side-screenshot {
@@ -198,6 +259,14 @@ section#project-2 {
 
 section#project-4 {
   background-color: #922eb6;
+}
+
+section#project-2 > .rigth-side-text > a {
+  color: #65cdb5;
+}
+
+section#project-4 .rigth-side-text > a {
+  color: #922eb6;
 }
 
 .technologies {
@@ -354,11 +423,11 @@ section#project-4 {
   color: #922eb6;
   border-radius: 5em;
   text-transform: uppercase;
+  opacity: 0.7;
 }
 
 .cv-btn:hover {
-  color: #65cdb5;
-  box-shadow: 0 0 0 0.2em #65cdb5;
+  opacity: 1;
 }
 
 @keyframes bounce {
@@ -500,11 +569,19 @@ section#project-4 {
     font-size: 1.5rem;
   }
 
+  .left-side-text > a {
+    font-size: 1.5em;
+  }
+
   #project-1 > .left-side-text > .project-text > h2 {
     font-size: 2.5rem;
   }
 
   #project-1 > .left-side-text > .project-text > h3 {
+    font-size: 1.5rem;
+  }
+
+  #project-1 > .left-side-text > .project-text > a {
     font-size: 1.5rem;
   }
 
@@ -537,6 +614,10 @@ section#project-4 {
   }
 
   .rigth-side-text > h3 {
+    font-size: 1.5rem;
+  }
+
+  .rigth-side-text > a {
     font-size: 1.5rem;
   }
 
