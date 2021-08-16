@@ -2,6 +2,7 @@
 
 * {
   font-family: "Montserrat", sans-serif !important;
+  transition: 0.5s ease-in-out;
 }
 
 html,
@@ -46,7 +47,7 @@ header {
 }
 
 .navbar > ul > li > a:hover {
-  font-weight: bold;
+  color: #65cdb5;
 }
 
 .section-1 {
@@ -130,6 +131,21 @@ header {
 }
 
 .left-side-text > h3 {
+  color: #922eb6;
+  font-size: 1em;
+  font-weight: 500;
+  opacity: 0.64;
+  margin-top: 0.5em;
+}
+
+#project-1 > .left-side-text > .project-text > h2 {
+  color: #922eb6;
+  font-size: 2em;
+  font-weight: 900;
+  margin-top: -0.6em;
+}
+
+#project-1 > .left-side-text > .project-text > h3 {
   color: #922eb6;
   font-size: 1em;
   font-weight: 500;
@@ -340,6 +356,11 @@ section#project-4 {
   text-transform: uppercase;
 }
 
+.cv-btn:hover {
+  color: #65cdb5;
+  box-shadow: 0 0 0 0.2em #65cdb5;
+}
+
 @keyframes bounce {
   0%,
   5%,
@@ -374,6 +395,9 @@ section#project-4 {
 
   .navbar > a {
     width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
   }
 
   .navbar > ul > li > a {
@@ -385,32 +409,17 @@ section#project-4 {
   .navbar > ul > li {
     padding: 1em;
   }
-  .headline > h1 {
-    color: #fff;
-    font-size: 3.3rem;
-    font-weight: 900;
-  }
 
-  .roll {
-    display: flex;
-    flex-direction: row;
-  }
-  .roll > .technologie {
-    margin-right: 2em;
-  }
-}
-
-@media (min-width: 1281px) {
   .section-1 {
-    height: 90vh;
     background-size: auto;
+    background-position-y: -3em;
   }
 
   .hero {
     width: 61%;
     padding: 2em;
     padding-left: 30%;
-    padding-top: 15%;
+    padding-top: 10%;
   }
 
   .headline > h1 {
@@ -419,7 +428,7 @@ section#project-4 {
 
   .headline > h2 {
     font-size: 2.5rem;
-    font-weight: 500;
+    font-weight: 00;
   }
 
   .icons {
@@ -443,5 +452,166 @@ section#project-4 {
     font-size: 1.5rem;
     font-weight: 300;
     margin-top: 0.5em;
+  }
+
+  .roll {
+    display: flex;
+    flex-direction: row;
+  }
+  .roll > .technologie {
+    margin-right: 2em;
+  }
+}
+
+@media (min-width: 1281px) {
+  .project {
+    height: 35em;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #project-1 > .left-side-text > h1 {
+    font-size: 9rem;
+  }
+
+  #project-1 > .left-side-text {
+    display: block;
+    margin-left: 0em;
+  }
+
+  #project-1 > .left-side-text > .project-text {
+    margin-left: 10em;
+    margin-top: 2em;
+  }
+
+  .left-side-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 10em;
+    justify-content: center;
+  }
+
+  .left-side-text > h2 {
+    font-size: 2.5rem;
+  }
+
+  .left-side-text > h3 {
+    font-size: 1.5rem;
+  }
+
+  #project-1 > .left-side-text > .project-text > h2 {
+    font-size: 2.5rem;
+  }
+
+  #project-1 > .left-side-text > .project-text > h3 {
+    font-size: 1.5rem;
+  }
+
+  #project-2,
+  #project-4 {
+    flex-direction: row-reverse;
+  }
+
+  .rigth-side-screenshot {
+    padding-left: 3em;
+    padding-top: 8em;
+  }
+
+  .rigth-side-screenshot > img {
+    width: 45em;
+    box-shadow: #0000006e 11px 8px 18px 2px;
+  }
+
+  .rigth-side-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 3em;
+    justify-content: center;
+    padding-right: 7em;
+  }
+
+  .rigth-side-text > h2 {
+    font-size: 2.5rem;
+  }
+
+  .rigth-side-text > h3 {
+    font-size: 1.5rem;
+  }
+
+  .left-side-screenshot {
+    padding-right: 3em;
+    padding-top: 8em;
+  }
+
+  .left-side-screenshot > img {
+    width: 45em;
+    box-shadow: #0000006e 11px 8px 18px 2px;
+  }
+
+  .technologies {
+    background-size: auto;
+    background-position-y: -2em;
+  }
+
+  .technologies > h1 {
+    font-size: 9rem;
+    margin-top: 0.3em;
+  }
+
+  .technologie > img {
+    width: 12em;
+  }
+
+  .tech-right-side {
+    width: 23em;
+  }
+
+  .tech-right-side > h2 {
+    font-size: 4rem;
+  }
+
+  .roll {
+    margin-bottom: 3em;
+  }
+
+  .roll > .technologie {
+    margin-right: 4em;
+  }
+
+  .two-items-roll > h3,
+  .two-items-roll2 > h3 {
+    font-size: 1.5rem;
+    height: 1.5em;
+  }
+
+  .one-item-roll > h3 {
+    font-size: 1.5rem;
+    height: 1.5em;
+  }
+
+  .ui-ux {
+    margin-bottom: 3em;
+  }
+
+  .about {
+    padding: 2em;
+  }
+
+  .about > h1 {
+    font-size: 9em;
+  }
+
+  .about > h2 {
+    font-size: 3rem;
+    width: 90%;
+    margin-bottom: 1em;
+  }
+
+  .cv-btn {
+    display: inline-block;
+    font-size: 2.5rem;
+    margin-bottom: 1em;
   }
 }
